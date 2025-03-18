@@ -55,6 +55,7 @@ By using descriptive statistics, businesses can gain a clear overview of operati
   - Alternative Hypothesis (H₁): Orders that take longer delivery time are more likely to be returned.
 
 - A t-Test: Two-Sample Assuming Unequal Variances was conducted to examine whether delivery time influences order returns.
+  
   <b>Key Results:</b>
   - <b>Mean Delivery Time:</b>
     - Completed Orders: 6.98 days
@@ -65,7 +66,19 @@ By using descriptive statistics, businesses can gain a clear overview of operati
   - <b>Observations:</b>
     - Completed Orders: 287
     - Returned Orders: 268
-  - t-Statistic: -5.53
-  - p-value (two-tailed): 4.96 × 10⁻⁸ (significant)
-  - Critical t-value (two-tailed): 1.96
+  - <b>t-Statistic:</b> -5.53
+  - <b>p-value (two-tailed):</b> 4.96 × 10⁻⁸ (significant)
+  - <b>Critical t-value (two-tailed):</b> 1.96
+
+ <b>Interpretation:</b>
+ - The p-value is much smaller than 0.05, indicating a statistically significant relationship between Delivery time and order status.
+ - The negative t-statistic suggests that returned orders tend to have longer delivery times.
+ -  t-statistic (-5.53) is less than -1.96, we reject the null hypothesis and conclude that longer delivery times are significantly associated with higher return rates.
+ -  On average, returned orders take approximately 1.8 days longer to deliver compared to completed orders.
+ -  A return rate of ~48% (268 out of 555 orders) is considerably high and indicates critical business challenges that need to be addressed.
+    -  A high return rate can lead to:
+       - Increased logistics costs (reverse shipping, restocking).
+       - Lost revenue due to refund processing.
+       - Higher operational burden (handling returns, quality checks). 
+
   
