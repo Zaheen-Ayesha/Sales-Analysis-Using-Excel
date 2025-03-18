@@ -30,3 +30,14 @@ The TEXT function in Excel was used:
 - =TEXT(OrderDate, "YYYY") for Year
 - =TEXT(OrderDate, "MMM") for Month
 - =TEXT(OrderDate, "DDD") for Day
+
+Extracting date components enables time-series analysis, helping identify seasonal trends, peak order periods, and yearly/monthly performance variations.
+
+The insights from time series analysis supports forecasting, resource allocation, and strategic planning, ultimately improving service delivery and customer 
+satisfaction. 
+
+2. To assess profitability, key financial metrics were computed:
+
+- Total Costs: Calculated using <span style="background-color: light grey;">=ROUND([Unit Price] * [Quantity] * VLOOKUP([Product Name], Table2[#All], 2, FALSE), 0)</span>, incorporating unit price, quantity, and cost percentage(retrieved from the cost per unit table).
+- Sales Revenue: Derived as Unit Price * Quantity, representing total earnings before costs.
+- Net Profit: Computed as Sales Revenue - Total Costs, reflecting actual profit.
