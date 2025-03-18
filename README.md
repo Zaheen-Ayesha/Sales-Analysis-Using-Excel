@@ -89,6 +89,7 @@ Profitability analysis helps assess business performance by identifying high-mar
 To improve operational efficiency, a macro-enabled data entry form was developed, allowing seamless entry of new sales records while maintaining data integrity.
 
 ### Development Process:
+
 1️⃣ Form Layout Design:
 
 - A structured form was designed with predefined input fields corresponding to key dataset attributes.
@@ -116,6 +117,7 @@ The automated data entry system significantly enhances efficiency, reducing manu
 
 ## KPI Calculation & Sales Performance Analysis Using Pivot Tables
 A pivot table was created to compute:
+
 1️⃣ <b>Revenue & Profit Analysis:</b>
 - Total Revenue, Total Cost, and Net Profit calculations
 - Filtering by Order Status
