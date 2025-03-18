@@ -13,10 +13,20 @@ The dataset contains detailed sales transactions for a retail store, including i
 
 1. <b>Standardizing Formats:</b>
   - The Order Date and Delivery Date columns were standardized to maintain uniform formatting, ensuring consistency for analysis and reporting.
+    
 2. <b>Removing Duplicates:</b>
   - Conditional formatting was applied to the Order ID column (the primary key) to highlight potential duplicate entries.
   - The Remove Duplicates feature was utilized by selecting all columns, successfully identifying and eliminating one duplicate record, thereby improving data accuracy.
+    
 3. <b>Handling Missing Values:</b>
   - One missing value in the Unit Price column was detected using conditional formatting to format the blank cells.
   - The missing value was imputed with the mean of the column, calculated through the Descriptive Statistics tool under Excel’s Data Analysis ribbon, ensuring data 
     completeness without introducing bias.
+
+## Data Processing
+
+1. To enhance time-based analysis, key date components were extracted, and delivery time was calculated:
+The TEXT function in Excel was used:
+- =TEXT(OrderDate, "YYYY") for Year
+- =TEXT(OrderDate, "MMM") for Month
+- =TEXT(OrderDate, "DDD") for Day
