@@ -45,11 +45,13 @@ satisfaction.
 Profitability analysis helps assess business performance by identifying high-margin products and cost-intensive items, enabling strategic pricing and cost control. Understanding cost structures supports data-driven decisions for pricing, promotions, and overall financial optimization.
 
 ## Data Analysis
-1. <b>Descriptive Statistical Analysis:</b>A statistical summary of key variables—including Delivery Time, Total Cost, Sales Revenue, Net Profit, Quantity, and Unit Price—was generated using the Descriptive Statistics function within the Data Analysis Toolpak.
+1. <b>Descriptive Statistical Analysis:</b>A statistical summary of key variables—including Delivery Time, Total Cost, Sales Revenue, Net Profit, Quantity, and Unit 
+   Price—was generated using the Descriptive Statistics function within the Data Analysis Toolpak.
 
-By using descriptive statistics, businesses can gain a clear overview of operational performance and identify areas for improvement before conducting deeper analysis.
+   By using descriptive statistics, businesses can gain a clear overview of operational performance and identify areas for improvement before conducting deeper analysis.
 
-2. <b>T-Test Analysis:</b>A t-test was conducted to examine the relationship between Delivery Time and Order Status, testing whether delivery time significantly impacts order completion.
+2. <b>T-Test Analysis:</b>A t-test was conducted to examine the relationship between Delivery Time and Order Status, testing whether delivery time significantly impacts 
+   order completion.
    
 - <b>Hypothesis Statement:</b>
   - Null Hypothesis (H₀): Delivery time does not influence whether an order is returned.
