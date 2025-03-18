@@ -167,23 +167,23 @@ The final step involved designing an interactive dashboard to visualize the key 
 
 ## Observations & Results
 
-1. Product Performance:
+1. <b>Product Performance:</b>
 - Apparel and Electronics generate the highest sales revenue but also incur higher costs.
 - Books and Groceries show consistent sales.
 
-2. Customer Demographics:
+2. <b>Customer Demographics:</b>
 - The majority of customers are from Nigeria, Australia, and the United States, with Nigeria contributing the highest number of orders.
 - Customers from China and the United Kingdom also show significant sales activity.
 
-3. Payment Methods:
+3. <b>Payment Methods:</b>
 - Credit Card and Mobile Money are the most popular payment methods, followed by Cash and Bank Transfer.
 - The choice of payment method varies by country, with Mobile Money being more prevalent in Nigeria and Credit Card in Australia and the United States.
 
-4. Order Status:
+4. <b>Order Status:</b>
 - Most orders are Completed, but there is a notable number of Returned orders, particularly in the Electronics and Apparel categories.
 - The return rate is higher for high-value items like Smartphones and Headphones.
 
-5. Sales Revenue and Net Profit:
+5. <b>Sales Revenue and Net Profit:</b>
 - The highest sales revenue is generated from Electronics, particularly Smartphones and Laptops
 - Despite high sales revenue, the net profit margin is lower for Electronics due to higher total costs (e.g., production, shipping).
 - Apparel and Home Decor show healthier profit margins compared to Electronics.
