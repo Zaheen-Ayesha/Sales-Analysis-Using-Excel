@@ -97,17 +97,106 @@ To improve operational efficiency, a macro-enabled data entry form was developed
 2️⃣ Macro-Driven Automation:
 
 - The Record Macro feature was used to automate the process of appending new entries to the dataset.
-- A Submit button was created, enabling one-click data submission.
+- A Submit button was linked to the macro to facilitate data insertion
 
 3️⃣ Error Handling & Confirmation Popup Message:
 
 - An issue was initially encountered while appending data, which was resolved using the following VBA script:
+  
    `Sheets("Retail Store Sales").Select
    Dim lastRow As Long
    lastRow = Sheets("Retail Store Sales").Cells(Rows.Count, "A").End(xlUp).Row + 1
    Range("A" & lastRow).PasteSpecial Paste:=xlPasteValues`
 
 - To enhance user experience, a confirmation popup message was implemented using VBA, ensuring users receive immediate feedback upon successful data submission.
+  
    `MsgBox "Submission Successful", vbInformation, "Confirmation"`
+
+The automated data entry system significantly enhances efficiency, reducing manual effort and minimizing errors.
+
+## KPI Calculation & Sales Performance Analysis Using Pivot Tables
+A pivot table was created to compute:
+1️⃣ <b>Revenue & Profit Analysis:</b>
+- Total Revenue, Total Cost, and Net Profit calculations
+- Filtering by Order Status
+- Customer count analysis
+
+2️⃣ <b>Order Status Analysis:</b>
+- A pivot table displaying Completed vs. Returned Orders was created.
+- The percentage of order status was calculated and visualized using a pie chart.
+
+3️⃣ <b>Monthly Sales Trend Analysis:</b>
+A Month Table Pivot Table was designed to analyze:
+- Revenue, Total Cost, and Net Profit for Each Month
+- A support column was added to include row numbers for reference.
+
+4️⃣ <b>Calculation of Key Metrics for MoM Sales Analysis :</b>
+
+To enhance financial analysis, the following additional measures were computed:
+
+<b>Previous Month:</b> `=MATCH(B43,B26:B37,0)-1` (B43->Lookup value from pivot table with only month values, B26:B37-> Pivot table containing Monthly Sales Analysis)
+
+<b>Previous Month Name:</b> `=IFERROR(VLOOKUP(C43,A26:E37,2,0),0)` (C43->Previous Month Value, A26:E37->Monthly Sales table Consisting of support Column,2->Column to lookup) 
+
+<b>Current Value:</b> Summarized total revenue, total costs, net profit, total order for the selected period.
+
+<b>Previous Month Value:</b> Extracted revenue, total costs, net profit, total order from the prior month.
+
+<b>Value Difference:</b> `=Current Value - Previous Month Value`
+
+<b>Percentage Difference:</b> (Value Difference / Previous Month Value) 
+
+ - Formatted Using `=IF(H43>0,"+"&TEXT(H43,"0.0%"),TEXT(H43,"0.0%"))'(H43 corresponding to Percentage Difference)
+
+<b>Final Value vs. Last Month (LM):</b> Comparison metric to highlight changes over time.
+
+ - Calculated using `=H44&"|"&G44` (H44->Percentage Difference and G44->Value Difference)
+ - Conditional formatting applied green for positive value and red for negative value.
+
+## Interactive Dashboard Creation
+
+The final step involved designing an interactive dashboard to visualize the key performance indicators effectively. The dashboard includes:
+1. Dynamic charts displaying total revenue, net profit, and total cost, total orders trends over time.
+2. Slicers and interactive elements to enhance usability.
+3. Order Status Breakdown visualized using donut charts.
+4. Revenue by Country mapped for global sales insights.
+5. Orders by Payment Method presented in a pie chart.
+6. Revenue, Cost and Profit by category visulized by stacked column chart.
+
+## Observations & Results
+
+1. Product Performance:
+- Apparel and Electronics generate the highest sales revenue but also incur higher costs.
+- Books and Groceries show consistent sales.
+
+2. Customer Demographics:
+- The majority of customers are from Nigeria, Australia, and the United States, with Nigeria contributing the highest number of orders.
+- Customers from China and the United Kingdom also show significant sales activity.
+
+3. Payment Methods:
+- Credit Card and Mobile Money are the most popular payment methods, followed by Cash and Bank Transfer.
+- The choice of payment method varies by country, with Mobile Money being more prevalent in Nigeria and Credit Card in Australia and the United States.
+
+4. Order Status:
+- Most orders are Completed, but there is a notable number of Returned orders, particularly in the Electronics and Apparel categories.
+- The return rate is higher for high-value items like Smartphones and Headphones.
+
+5. Sales Revenue and Net Profit:
+- The highest sales revenue is generated from Electronics, particularly Smartphones and Laptops
+- Despite high sales revenue, the net profit margin is lower for Electronics due to higher total costs (e.g., production, shipping).
+- Apparel and Home Decor show healthier profit margins compared to Electronics.
+
+<b>To improve sales performance and profitability, the following actions are recommended:</b>
+
+<b>Optimize Inventory:</b> Focus on high-margin products like Apparel and Home Decor while managing costs for Electronics.
+
+<b>Enhance Customer Experience:</b> Reduce return rates by improving product quality and ensuring accurate product descriptions.
+
+<b>Streamline Delivery:</b> Improve delivery efficiency, especially for international orders, to enhance customer satisfaction.
+
+<b>Targeted Marketing:</b> Leverage seasonal trends and customer preferences to run targeted marketing campaigns, particularly during peak sales months.
+
+This report serves as a foundation for strategic planning and decision-making to achieve sustainable growth and profitability in the retail business.
+
 
   
