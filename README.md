@@ -41,3 +41,31 @@ satisfaction.
 - <b>Total Costs:</b> Calculated using `=ROUND([Unit Price] * [Quantity] * VLOOKUP([Product Name], Table2[#All], 2, FALSE), 0)`, incorporating unit price, quantity, and cost percentage.
 - <b>Sales Revenue:</b> Derived as `Unit Price * Quantity`, representing total earnings before costs.
 - <b>Net Profit:</b> Computed as `Sales Revenue - Total Costs`, reflecting actual profit.
+
+Profitability analysis helps assess business performance by identifying high-margin products and cost-intensive items, enabling strategic pricing and cost control. Understanding cost structures supports data-driven decisions for pricing, promotions, and overall financial optimization.
+
+## Data Analysis
+1.**Descriptive Statistical Analysis:**A statistical summary of key variables—including Delivery Time, Total Cost, Sales Revenue, Net Profit, Quantity, and Unit Price—was generated using the Descriptive Statistics function within the Data Analysis Toolpak.
+
+By using descriptive statistics, businesses can gain a clear overview of operational performance and identify areas for improvement before conducting deeper analysis.
+
+2.**T-Test Analysis:**A t-test was conducted to examine the relationship between Delivery Time and Order Status, testing whether delivery time significantly impacts order completion.
+- Hypothesis Statement
+  - Null Hypothesis (H₀): Delivery time does not influence whether an order is returned.
+  - Alternative Hypothesis (H₁): Orders that take longer delivery time are more likely to be returned.
+
+- A t-Test: Two-Sample Assuming Unequal Variances was conducted to examine whether delivery time influences order returns.
+  <b>Key Results:</b>
+  - <b>Mean Delivery Time:</b>
+    - Completed Orders: 6.98 days
+    - Returned Orders: 8.77 days
+  - <b>Variance:</b>
+    - Completed Orders: 12.70
+    - Returned Orders: 16.07
+  - <b>Observations:</b>
+    - Completed Orders: 287
+    - Returned Orders: 268
+  - t-Statistic: -5.53
+  - p-value (two-tailed): 4.96 × 10⁻⁸ (significant)
+  - Critical t-value (two-tailed): 1.96
+  
