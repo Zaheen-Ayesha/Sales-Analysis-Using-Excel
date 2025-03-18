@@ -38,6 +38,6 @@ satisfaction.
 
 2. To assess profitability, key financial metrics were computed:
 
-- Total Costs: Calculated using <span style="background-color: grey;">=ROUND([Unit Price] * [Quantity] * VLOOKUP([Product Name], Table2[#All], 2, FALSE), 0)</span>, incorporating unit price, quantity, and cost percentage(retrieved from the cost per unit table).
+- **Total Costs:** Calculated using `=ROUND([Unit Price] * [Quantity] * VLOOKUP([Product Name], Table2[#All], 2, FALSE), 0)`, incorporating unit price, quantity, and cost percentage.
 - Sales Revenue: Derived as Unit Price * Quantity, representing total earnings before costs.
 - Net Profit: Computed as Sales Revenue - Total Costs, reflecting actual profit.
