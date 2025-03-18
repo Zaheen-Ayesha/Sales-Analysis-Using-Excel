@@ -27,9 +27,9 @@ The dataset contains detailed sales transactions for a retail store, including i
 
 1. To enhance time-based analysis, key date components were extracted, and delivery time was calculated:
 The TEXT function in Excel was used:
-- =TEXT(OrderDate, "YYYY") for Year
-- =TEXT(OrderDate, "MMM") for Month
-- =TEXT(OrderDate, "DDD") for Day
+- `=TEXT(OrderDate, "YYYY") for Year`
+- `=TEXT(OrderDate, "MMM") for Month`
+- `=TEXT(OrderDate, "DDD") for Day`
 
 Extracting date components enables time-series analysis, helping identify seasonal trends, peak order periods, and yearly/monthly performance variations.
 
@@ -38,6 +38,6 @@ satisfaction.
 
 2. To assess profitability, key financial metrics were computed:
 
-- **Total Costs:** Calculated using `=ROUND([Unit Price] * [Quantity] * VLOOKUP([Product Name], Table2[#All], 2, FALSE), 0)`, incorporating unit price, quantity, and cost percentage.
-- **Sales Revenue:** Derived as `Unit Price * Quantity`, representing total earnings before costs.
-- **Net Profit:** Computed as `Sales Revenue - Total Costs`, reflecting actual profit.
+- <b>Total Costs:</b> Calculated using `=ROUND([Unit Price] * [Quantity] * VLOOKUP([Product Name], Table2[#All], 2, FALSE), 0)`, incorporating unit price, quantity, and cost percentage.
+- <b>Sales Revenue:</b> Derived as `Unit Price * Quantity`, representing total earnings before costs.
+- <b>Net Profit:</b> Computed as `Sales Revenue - Total Costs`, reflecting actual profit.
