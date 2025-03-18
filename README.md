@@ -71,7 +71,7 @@ By using descriptive statistics, businesses can gain a clear overview of operati
   - <b>p-value (two-tailed):</b> 4.96 × 10⁻⁸ (significant)
   - <b>Critical t-value (two-tailed):</b> 1.96
 
- <b>Interpretation:</b>
+<b>Interpretation:</b>
  - The p-value is much smaller than 0.05, indicating a statistically significant relationship between Delivery time and order status.
  - The negative t-statistic suggests that returned orders tend to have longer delivery times.
  -  t-statistic (-5.53) is less than -1.96, we reject the null hypothesis and conclude that longer delivery times are significantly associated with higher return rates.
