@@ -7,21 +7,27 @@ The primary objective of this sales analysis project is to analyze and evaluate 
 
 The analysis aims to identify trends, patterns, and insights that can help in making data-driven decisions to improve sales, optimize inventory, and enhance customer satisfaction. 
 
-The dataset contains detailed sales transactions for a retail store, including information such as customer names, product categories, product names, order dates, delivery dates, quantities, unit prices, order status, country, payment methods. The data spans multiple countries and product categories, including Electronics, Books, Apparel, Groceries, and Home Decor.
+The dataset contains detailed sales transactions for a retail store, including information such as customer names, product categories, product names, order dates, delivery dates, quantities, unit prices, order status, country, payment methods. The data spans multiple countries and product categories, including Electronics, 
+Books, Apparel, Groceries, and Home Decor.
+
+## Executive Summary
+
+This report provides a comprehensive analysis of retail store sales data to uncover key trends, customer purchasing behavior, product performance, and operational efficiencies. The analysis highlights that Electronics and Apparel are the highest revenue-generating categories, but profit margins are impacted by high return rates and operational costs. A significant correlation between delivery time and returns suggests potential improvements in logistics. The report concludes with strategic recommendations to optimize inventory, enhance customer experience, and improve profitability.
 
 ## Data Cleaning
 
 1. <b>Standardizing Formats:</b>
-  - The Order Date and Delivery Date columns were standardized to maintain uniform formatting, ensuring consistency for analysis and reporting.
+- The Order Date and Delivery Date columns were standardized to maintain uniform formatting, ensuring consistency for analysis and reporting.
     
 2. <b>Removing Duplicates:</b>
-  - Conditional formatting was applied to the Order ID column (the primary key) to highlight potential duplicate entries.
-  - The Remove Duplicates feature was utilized by selecting all columns, successfully identifying and eliminating one duplicate record, thereby improving data accuracy.
+- Conditional formatting was applied to the Order ID column (the primary key) to highlight potential duplicate entries.
+- The Remove Duplicates feature was utilized by selecting all columns, successfully identifying and eliminating 2.5% duplicate records to prevent skewed analysis, 
+ thereby improving data accuracy.
     
 3. <b>Handling Missing Values:</b>
-  - One missing value in the Unit Price column was detected using conditional formatting to format the blank cells.
-  - The missing value was imputed with the mean of the column, calculated through the Descriptive Statistics tool under Excel’s Data Analysis ribbon, ensuring data 
-    completeness without introducing bias.
+- One missing value in the Unit Price column was detected using conditional formatting to format the blank cells.
+- The missing value was imputed with the mean of the column, calculated through the Descriptive Statistics tool under Excel’s Data Analysis ribbon, ensuring data 
+completeness without introducing bias.
 
 ## Data Processing
 
@@ -46,12 +52,12 @@ Profitability analysis helps assess business performance by identifying high-mar
 
 ## Data Analysis
 1. <b>Descriptive Statistical Analysis:</b>A statistical summary of key variables—including Delivery Time, Total Cost, Sales Revenue, Net Profit, Quantity, and Unit 
-   Price—was generated using the Descriptive Statistics function within the Data Analysis Toolpak.
+Price—was generated using the Descriptive Statistics function within the Data Analysis Toolpak.
 
-   By using descriptive statistics, businesses can gain a clear overview of operational performance and identify areas for improvement before conducting deeper analysis.
+By using descriptive statistics, businesses can gain a clear overview of operational performance and identify areas for improvement before conducting deeper analysis.
 
-2. <b>T-Test Analysis:</b>A t-test was conducted to examine the relationship between Delivery Time and Order Status, testing whether delivery time significantly impacts 
-   order completion.
+2. <b>T-Test Analysis:</b>A t-test was conducted to examine the relationship between Delivery Time and Order Status, testing whether delivery time significantly 
+ impacts order completion.
    
 - <b>Hypothesis Statement:</b>
   - Null Hypothesis (H₀): Delivery time does not influence whether an order is returned.
@@ -59,19 +65,22 @@ Profitability analysis helps assess business performance by identifying high-mar
 
 - A t-Test: Two-Sample Assuming Unequal Variances was conducted to examine whether delivery time influences order returns.
   
-  <b>Key Results:</b>
-  - <b>Mean Delivery Time:</b>
-    - Completed Orders: 6.98 days
-    - Returned Orders: 8.77 days
-  - <b>Variance:</b>
-    - Completed Orders: 12.70
-    - Returned Orders: 16.07
-  - <b>Observations:</b>
-    - Completed Orders: 287
-    - Returned Orders: 268
-  - <b>t-Statistic:</b> -5.53
-  - <b>p-value (two-tailed):</b> 4.96 × 10⁻⁸ (significant)
-  - <b>Critical t-value (two-tailed):</b> 1.96
+ ## Key Results
+
+| Metric                        | Completed Orders | Returned Orders |
+|--------------------------------|-----------------|----------------|
+| **Mean Delivery Time (days)**  | 6.98            | 8.77           |
+| **Variance**                   | 12.70           | 16.07          |
+| **Observations**               | 287             | 268            |
+
+### Statistical Analysis
+
+| Metric                        | Value           |
+|--------------------------------|----------------|
+| **t-Statistic**               | -5.53          |
+| **p-value (two-tailed)**      | 4.96 × 10⁻⁸ (significant) |
+| **Critical t-value (two-tailed)** | 1.96       |
+
 
 <b>Interpretation:</b>
  - The p-value is much smaller than 0.05, indicating a statistically significant relationship between Delivery time and order status.
