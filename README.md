@@ -157,7 +157,7 @@ To enhance financial analysis, the following additional measures were computed:
 
 <b>Percentage Difference:</b> (Value Difference / Previous Month Value) 
 
- - Formatted Using `=IF(H43>0,"+"&TEXT(H43,"0.0%"),TEXT(H43,"0.0%"))'(H43 corresponding to Percentage Difference)
+ - Formatted Using `=IF(H43>0,"+"&TEXT(H43,"0.0%"),TEXT(H43,"0.0%"))`(H43 corresponding to Percentage Difference)
 
 <b>Final Value vs. Last Month (LM):</b> Comparison metric to highlight changes over time.
 
