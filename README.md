@@ -57,7 +57,7 @@ Price—was generated using the Descriptive Statistics function within the Data 
 By using descriptive statistics, businesses can gain a clear overview of operational performance and identify areas for improvement before conducting deeper analysis.
 
 2. <b>T-Test Analysis:</b>A t-test was conducted to examine the relationship between Delivery Time and Order Status, testing whether delivery time significantly 
- impacts order completion.
+impacts order completion.
    
 - <b>Hypothesis Statement:</b>
   - Null Hypothesis (H₀): Delivery time does not influence whether an order is returned.
@@ -174,32 +174,119 @@ The final step involved designing an interactive dashboard to visualize the key 
 5. Orders by Payment Method presented in a pie chart.
 6. Revenue, Cost and Profit by category visulized by stacked column chart.
 
-## Observations & Results
+## Key Insights, Observations, and Results from Sales Analysis
 
-1. <b>Product Performance:</b>
-- Apparel and Electronics generate the highest sales revenue but also incur higher costs.
-- Books and Groceries show consistent sales.
+### Overall Sales Performance
 
-2. <b>Customer Demographics:</b>
-- The majority of customers are from Nigeria, Australia, and the United States, with Nigeria contributing the highest number of orders.
-- Customers from China and the United Kingdom also show significant sales activity.
+| Metric                     | Value                     |
+|----------------------------|---------------------------|
+| **Total Sales Revenue**    | $1,473,681                |
+| **Total Costs**            | $958,716                  |
+| **Total Net Profit**       | $514,965                  |
+| **Total Orders**           | 557                       |
+| **Completed Orders**       | 289                       |
+| **Returned Orders**        | 268                       |
+| **Average Delivery Time**  | 7.83 days                 |
+| **Return Rate**            | 48.1% (High return rate impacting profitability) |
 
-3. <b>Payment Methods:</b>
-- Credit Card and Mobile Money are the most popular payment methods, followed by Cash and Bank Transfer.
-- The choice of payment method varies by country, with Mobile Money being more prevalent in Nigeria and Credit Card in Australia and the United States.
+<b>Business Impact & Recommendations</b>
+<b>High Return Rate (48.1%)</b> reduces profitability due to logistics and restocking costs.
+<b>Low Order Completion (51.9%)</b> indicates product quality issues or poor customer satisfaction.
+<b>Long Delivery Time (7.83 days)</b> may cause higher returns and customer churn.
 
-4. <b>Order Status:</b>
-- Most orders are Completed, but there is a notable number of Returned orders, particularly in the Electronics and Apparel categories.
-- The return rate is higher for high-value items like Smartphones and Headphones.
+<b>Recommendations:</b> Improve product quality, descriptions, and packaging. Optimize inventory, automate fulfillment, and enhance logistics for faster delivery. Reduce return-related costs and focus on high-margin products to boost profitability.
 
-5. <b>Sales Revenue and Net Profit:</b>
-- The highest sales revenue is generated from Electronics, particularly Smartphones and Laptops
-- Despite high sales revenue, the net profit margin is lower for Electronics due to higher total costs (e.g., production, shipping).
-- Apparel and Home Decor show healthier profit margins compared to Electronics.
+## Sales & Profit Summary (2024 vs 2025)
 
-<b>To improve sales performance and profitability, the following actions are recommended:</b>
+| Year  | Sales Revenue | Net Profit |
+|-------|--------------|------------|
+| 2024  | $786,774    | $273,642   |
+| 2025  | $686,907    | $241,323   |
+| **Total** | **$1,473,681** | **$514,965** |
 
-<b>Optimize Inventory:</b> Focus on high-margin products like Apparel and Home Decor while managing costs for Electronics.
+<b>Observation:</b>
+
+- <b>2024 had higher sales revenue</b> compared to 2025 by $99,867 (+14.5%).
+- <b>Net profit decreased by $32,319 in 2025</b>, indicating possible increased costs or lower margins.
+- Revenue decline suggests potential challenges in sales growth or demand fluctuations.
+
+## **Top Performing Product Categories **
+
+| Category     | Sales Revenue | Net Profit |
+|-------------|--------------|------------|
+| Apparel     | $323,605     | $90,596    |
+| Books       | $321,005     | $144,615   |
+| Groceries   | $293,726     | $132,073   |
+| Electronics | $292,536     | $76,495    |
+| Home Decor  | $242,809     | $71,186    |
+
+<b>Observation:</b>
+
+- <b>Books and Groceries</b> contribute high net profits despite slightly lower revenues.
+- <b>Electronics</b> has lower profit margins due to high costs.
+- <b>Apparel & Home Decor</b> have balanced revenue and profit margins.
+
+### Top performing products
+
+| Product            | Sales Revenue | Net Profit |
+|--------------------|--------------|------------|
+| Cereal            | $101,835      | $45,827    |
+| T-Shirt          | $84,917       | $29,719    |
+| Sneakers         | $82,347       | $20,582    |
+| Headphones       | $82,022       | $28,707    |
+| Children's Book  | $80,224       | $32,092    |
+
+<b>Observation:</b>
+
+- <b>Cereal</b> is the highest-selling product.
+- <b>Electronics (Headphones)</b> appear in the top 5 but with moderate profitability.
+- <b>Apparel products (T-Shirts & Sneakers)</b> have strong sales but varying profits.
+
+### Payment Method
+
+| Payment Method   | Number of Orders |
+|-----------------|-----------------|
+| Bank Transfer   | 162             |
+| Mobile Money    | 143             |
+| Cash            | 127             |          
+
+<b>Observation:</b>
+
+- <b>Bank Transfers & Mobile Money</b> dominate payments, indicating preference for digital transactions.
+- <b>Cash payments</b> are significant, requiring efficient cash management.
+
+### Top 5 Countries By Orders
+
+| Country         | Number of Orders |
+|----------------|-----------------|
+| Nigeria        | 133             |
+| Australia      | 117             |
+| United Kingdom | 97              |
+| China          | 90              |
+| United States  | 85              |
+
+<b>Observation:</b>
+
+- <b>Nigeria</b> leads in total orders, highlighting strong regional demand.
+- <b>Australia, UK, and China</b> are also major markets.
+
+## Top-Performing Months (Highest Sales Revenue)
+
+| Month     | Sales Revenue | Net Profit |
+|-----------|--------------|------------|
+| December  | $156,371     | $55,909    |
+| March     | $141,726     | $50,036    |
+| August    | $132,129     | $47,694    |
+
+<b>Observation:</b>
+
+- December recorded the highest sales and profit, likely due to holiday shopping.
+- March and August also showed strong sales, possibly driven by seasonal promotions.
+- May had the lowest revenue and profit, indicating a slow sales period.
+
+## To improve sales performance and profitability, the following actions are recommended:
+
+<b>Optimize Inventory:</b> Focus on high-margin products like Books and Groceries while managing costs for Electronics.
 
 <b>Enhance Customer Experience:</b> Reduce return rates by improving product quality and ensuring accurate product descriptions.
 
@@ -207,7 +294,7 @@ The final step involved designing an interactive dashboard to visualize the key 
 
 <b>Targeted Marketing:</b> Leverage seasonal trends and customer preferences to run targeted marketing campaigns, particularly during peak sales months.
 
-This report serves as a foundation for strategic planning and decision-making to achieve sustainable growth and profitability in the retail business.
+
 
 
   
