@@ -1,4 +1,4 @@
-# Sales-Analysis-Using-Excel
+# Sales Analysis Using Excel
 
 The primary objective of this sales analysis project is to analyze and evaluate the sales performance of a retail store and address the following key business questions posed by the client:
 - Which products generate the highest revenue and profit, and what are their associated costs ?
